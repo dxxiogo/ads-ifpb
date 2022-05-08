@@ -1,0 +1,13 @@
+@import  "recursos/fontecolor.scss";
+@import "pages/paginicial.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: $font-principal;
+}
+html{
+    scroll-behavior: smooth;
+}
