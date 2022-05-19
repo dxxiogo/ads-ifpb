@@ -1,10 +1,10 @@
 
 .container{
     header{
-        background-color: white;
+        background-color:$color-4;
         width: 100%;
         padding: 10px 50px;
-        color: $color-4;
+        color: white;
         position: fixed;
         box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.281);
             nav{
@@ -41,7 +41,7 @@
                 gap: 30px;
             }
             li a{
-                color: $color-4;
+                color: white;
                 transition: 1s;
                 
             }
@@ -49,7 +49,8 @@
                 color: $color-3;
             }
             a > .btn{
-                background-color: $color-4;
+                background-color: $color-2;
+                font-size: 14px;
                 border: none;
                 width: 100px;
                 height: 40px;
@@ -69,6 +70,7 @@
                 background-size: cover;
             }
             .text-box-first{
+                background-color: #0d13218a;
                 width: 100%;
                 height: 100%;
                 padding-top: 35vh;
@@ -78,7 +80,9 @@
                 font-size: 40px;
                 padding-bottom: 5px;
                 color: white;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.556);
+            }
+            .aprovacao{
+                color: $color-2;
             }
             .text-box-first button{
                 margin-top: 20px ;
@@ -86,7 +90,7 @@
                 height: 50px;
                 border-radius: 10px;
                 border: none;
-                background-color: $color-2;
+                background-color: $color-4;
                 box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.193);
             }
             button a{
@@ -146,7 +150,7 @@
             .section-second{
                 .section-second-courses{
                     width: 100%;
-                    background-image: linear-gradient( 25deg, rgba(0, 0, 0, 0.342), $color-3);
+                    background-color: #546872;
                     display: grid;
                     grid-template-columns:  1fr 1fr 1fr;
                     gap: 20px;
@@ -166,7 +170,7 @@
                         width: 350px;
                     }
                 .fundo-img{
-                    background-color: $color-2;
+                    background-color: $color-3;
                     height: 210px;
                 }
                 .section-second-courses-item p{
@@ -235,6 +239,8 @@
                 .btn{
                     background-color: $color-4;
                     border: none;
+                    font-size: 14px;
+                    font-weight: 500;
                     color: white;
                     height: 30px;
                     cursor: pointer;
