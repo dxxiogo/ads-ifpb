@@ -16,11 +16,11 @@ void main(){
             if(peso >= maiorPeso){
             maiorPeso = peso;
             strcpy(maisPesado, boi);
-             printf(maisPesado);   
-            }else if(peso <= menorPeso){
+             printf("%s\n", maisPesado);   
+             }else if(peso < menorPeso){
                     menorPeso = peso;
                     strcpy(menosPesado, boi);
-                    printf(menosPesado);
+                    printf("%s\n"menosPesado);
                     }         
             printf("Informe o nome do proximo boi: ");
             gets(boi);
