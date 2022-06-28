@@ -8,7 +8,7 @@ void main(){
    printf("Informe tres numeros para calcular o mmc: ");
    scanf("%d %d %d", &num1, &num2, &num3);
    while(num1 != 1 && num2 != 1 && num3 != 1){
-        if(num1%divisor == 0 || num2%divisor == 0 || num3%divisor == 0){
+        while(num1%divisor == 0 || num2%divisor == 0 || num3%divisor == 0){
             mmc *= divisor;
             if(num1%divisor == 0){
                 num1 /= divisor;
@@ -19,9 +19,8 @@ void main(){
             if(num3%divisor == 0){
                 num3 /= divisor;
             }
-        } else {
-            divisor ++;
-        }  
+        } 
+        divisor ++;
    }     
    printf("O mmc entre os tres numeros e %d", mmc);
 }
