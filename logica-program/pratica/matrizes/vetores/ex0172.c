@@ -10,29 +10,26 @@ sequência estejam ordenados em ordem crescente. Por exemplo, no vetor (0, 6, 8,
 const int QUANTIDADE = 10;
 
 void main(){
-    int vVetor[QUANTIDADE], num, i, m, sequencia = 0;
-    int fator = 0;
-    printf("\nInforme um numero entre 1 e 10: ");
-    scanf("%d", &num);
-    printf("\nInforme um vetor:\n");
+    int vVetor[10], num, i, m;
+    int sequencia = 0, sequenciaElementos = 0;
+    printf("Informe o vetor: ");
     for(i = 0; i < QUANTIDADE; i++){
         scanf("%d", &vVetor[i]);
     }
-    for(i = 0; i  < QUANTIDADE; i++){
-        for(m= i; m < QUANTIDADE; m++){
+    printf("Informe um numero inteiro positivo: ");
+    scanf("%d", &num);
+    for(i = 0; i < QUANTIDADE - num; i++){
+        int controladora = 0;
+        for(m = i; controladora < num; m++){
             if(vVetor[m] < vVetor[m + 1]){
-                fator ++;
+                sequencia++;
             }
+            if(sequencia == num){
+                sequenciaElementos ++;
+                sequencia = 0;
+            }
+            controladora ++;
         }
-        if(fator == num){
-             sequencia ++;
-        }
-        fator = 0;
     }
-    /*for(i =  0; i < QUANTIDADE; i++){
-        if(vVetor[i] < vVetor[i+1]){
-            fator ++;
-        }
-    }*/
-    printf("Existe %d sequencia do  tamanho %d", sequencia, num);
+    printf("Existe %d sequencias de tamanho %d", sequenciaElementos, num);
 }
